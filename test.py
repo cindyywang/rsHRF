@@ -1,21 +1,3 @@
-# import rsHRF
-# from rsHRF.spm_dep.spm import spm_hrf
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-# bold = np.random.rand(200)
-# hrf = spm_hrf(RT=2.0)  # Generate canonical HRF with TR=2.0s
-# print(hrf[:10])
-
-# plt.plot(hrf)
-# plt.title("Canonical HRF (TR=2.0s)")
-# plt.xlabel("Time points")
-# plt.ylabel("Amplitude")
-
-# # Save the plot to a file
-# plt.savefig("canonical_hrf.png", dpi=300)
-# plt.close()  # Close the figure to free memory
-
 import rsHRF
 from rsHRF.spm_dep.spm import spm_hrf
 import numpy as np
