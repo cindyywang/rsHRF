@@ -5,7 +5,14 @@
 
 ## Pipeline Overview
 
-Empirical BOLD (already contains HRF) | Estimate subject-specific HRF using rsHRF | Run neural simulation in TVB using structural connectivity | Convolve simulated neural activity with subject-specific HRF | Generate simulated BOLD signal | Compute Functional Connectivity (FC) | Compare simulated FC with empirical FC | Compare subject-specific HRF vs canonical HRF
+- Empirical BOLD (already contains HRF)
+- Estimate subject-specific HRF using rsHRF
+- Run neural simulation in TVB using structural connectivity
+- Convolve simulated neural activity with subject-specific HRF
+- Generate simulated BOLD signal
+- Compute Functional Connectivity (FC)
+- Compare simulated FC with empirical FC
+- Compare subject-specific HRF vs canonical HRF
 
 ## Pipeline
 1. Run `test.py` to generate neural and BOLD signals.
