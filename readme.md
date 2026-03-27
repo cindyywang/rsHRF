@@ -4,7 +4,7 @@
 - OpenNeuro ds001226, pre-processed for TVB
 
 ## Pipeline
-1. Run `simulate_all_subjects.py` to generate neural and BOLD signals.
+1. Run `test.py` to generate neural and BOLD signals.
 2. `analysis.py` computes correlations with empirical FC and improvements.
 
 ## Outputs
