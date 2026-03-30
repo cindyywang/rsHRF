@@ -158,14 +158,39 @@ python plot_tvb_bold_timeseries.py
 python plot_fc_vs_sc.py
 ```
 
-**Generated figures:**
-| Figure | Description |
-|--------|-------------|
-| `HRF_boxplot_figure.png` | Boxplot of FC correlations (sameHRF vs diffHRF) |
-| `HRF_improvement_figure.png` | Improvement by group (Controls vs Patients) |
-| `fig_sub-XXX_bold_timeseries.png` | Neural & BOLD timeseries comparison |
-| `fig_FC_vs_SC_scatter.png` | SC-FC relationship scatter plot |
-| `fig_FC_matrix_comparison.png` | FC matrix heatmap comparison |
+---
+
+## Generated Figures
+
+### HRF Boxplot Comparison
+
+![HRF Boxplot](results/HRF_boxplot_figure.png)
+
+*Boxplot of FC correlations: Canonical HRF (sameHRF) vs Subject-Specific HRF (diffHRF)*
+
+### HRF Improvement by Group
+
+![HRF Improvement](results/HRF_improvement_figure.png)
+
+*Improvement in FC correlation when using subject-specific HRF, grouped by Controls and Patients*
+
+### BOLD Timeseries (Neural, Simulated, Empirical)
+
+![BOLD Timeseries](fig_sub-CON01_bold_timeseries.png)
+
+*Comparison of neural activity, simulated BOLD (canonical & subject-specific HRF), and empirical BOLD for sub-CON01*
+
+### FC vs SC Scatter Comparison
+
+![FC vs SC](fig_FC_vs_SC_scatter.png)
+
+*Relationship between Structural Connectivity (SC) and Functional Connectivity (FC) for multiple subjects*
+
+### FC Matrix Comparison
+
+![FC Matrix](fig_FC_matrix_comparison.png)
+
+*Heatmap comparison of Empirical FC, Simulated FC, and their difference (sub-CON01)*
 
 ---
 
@@ -187,13 +212,14 @@ results/
 | `FC_HRF_comparison.csv` | Per-subject FC correlations and improvement scores |
 
 ### Figures
+
 | File | Description |
 |------|-------------|
-| `HRF_boxplot_figure.png` | FC correlation comparison (boxplot) |
-| `HRF_improvement_figure.png` | Improvement by group |
-| `fig_*_bold_timeseries.png` | BOLD timeseries visualization |
-| `fig_FC_vs_SC_scatter.png` | FC vs SC relationship |
-| `fig_FC_matrix_comparison.png` | FC matrix heatmaps |
+| [`HRF_boxplot_figure.png`](results/HRF_boxplot_figure.png) | FC correlation comparison (boxplot) |
+| [`HRF_improvement_figure.png`](results/HRF_improvement_figure.png) | Improvement by group |
+| [`fig_sub-CON01_bold_timeseries.png`](fig_sub-CON01_bold_timeseries.png) | BOLD timeseries visualization |
+| [`fig_FC_vs_SC_scatter.png`](fig_FC_vs_SC_scatter.png) | FC vs SC relationship |
+| [`fig_FC_matrix_comparison.png`](fig_FC_matrix_comparison.png) | FC matrix heatmaps |
 
 ---
 
@@ -244,7 +270,11 @@ rsHRF/
 ├── ds001226/                          # Dataset (derivatives from OpenNeuro)
 │
 ├── FC_HRF_comparison.csv              # Analysis results
-├── *.png                              # Generated figures
+├── HRF_boxplot_figure.png             # HRF comparison boxplot
+├── HRF_improvement_figure.png         # Improvement by group
+├── fig_sub-CON01_bold_timeseries.png  # BOLD timeseries plot
+├── fig_FC_vs_SC_scatter.png           # FC vs SC scatter plot
+├── fig_FC_matrix_comparison.png       # FC matrix heatmap
 │
 └── readme.md                          # This file
 ```
